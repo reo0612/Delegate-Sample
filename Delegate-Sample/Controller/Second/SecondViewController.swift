@@ -1,6 +1,5 @@
 
 import UIKit
-import KRProgressHUD
 
 // 処理を依頼する側
 
@@ -15,6 +14,7 @@ final class SecondViewController: UIViewController {
             tableView.dataSource = self
         }
     }
+    @IBOutlet weak private var indicator: UIActivityIndicatorView!
     
     private var githubs: [GithubModel] = []
     
@@ -24,30 +24,22 @@ final class SecondViewController: UIViewController {
     }
     
     private func getApiData() {
-        let indicatorMessage = "読み込み中..."
+        indicator.start()
         
-        KRProgressHUD.show(withMessage: indicatorMessage) {
-            DataRequest.shared.githubApi { (githubs, error) in
-                if let error = error {
-                    KRProgressHUD.dismiss {
-                        Alert.okAlert(vc: self, title: error.localizedDescription, message: "")
-                        return
-                    }
-                }
-                if githubs.isEmpty {
-                    KRProgressHUD.dismiss {
-                        Alert.okAlert(vc: self, title: AppError.emptyApi.domain, message: "")
-                        return
-                    }
-                }
-                self.githubs = githubs
-                
-                DispatchQueue.main.async {
-                    KRProgressHUD.dismiss {
-                        self.tableView.reloadData()
-                    }
-                }
+        DataRequest.shared.githubApi { (githubs, error) in
+            if let error = error {
+                self.indicator.stop()
+                Alert.okAlert(vc: self, title: error.localizedDescription, message: "")
+                return
             }
+            if githubs.isEmpty {
+                self.indicator.stop()
+                Alert.okAlert(vc: self, title: AppError.emptyApi.domain, message: "")
+                return
+            }
+            self.githubs = githubs
+            self.indicator.stop()
+            self.tableView.reload()
         }
     }
 }
