@@ -26,7 +26,6 @@
 		83058E092609F0B900DEB0EA /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83058E082609F0B900DEB0EA /* DataRequest.swift */; };
 		8343CD44260C1A7F0074E53B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343CD43260C1A7F0074E53B /* Alert.swift */; };
 		8343CD4C260C1ACE0074E53B /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343CD4B260C1ACE0074E53B /* AppError.swift */; };
-		83C654CC260C2C6000E4BE38 /* KRProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 83C654CB260C2C6000E4BE38 /* KRProgressHUD */; };
 		83DDCBA1261AE2D100867A4E /* UIActivityIndicatorView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDCBA0261AE2D100867A4E /* UIActivityIndicatorView+.swift */; };
 		83DDCBA9261AE82C00867A4E /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDCBA8261AE82C00867A4E /* UITableView+.swift */; };
 /* End PBXBuildFile section */
@@ -82,7 +81,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83C654CC260C2C6000E4BE38 /* KRProgressHUD in Frameworks */,
 				83058E032609F09B00DEB0EA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +264,6 @@
 			name = "Delegate-Sample";
 			packageProductDependencies = (
 				83058E022609F09B00DEB0EA /* Alamofire */,
-				83C654CB260C2C6000E4BE38 /* KRProgressHUD */,
 			);
 			productName = "Delegate-Sample";
 			productReference = 83058D822609E87C00DEB0EA /* Delegate-Sample.app */;
@@ -341,7 +338,6 @@
 			mainGroup = 83058D792609E87C00DEB0EA;
 			packageReferences = (
 				83058E012609F09B00DEB0EA /* XCRemoteSwiftPackageReference "Alamofire" */,
-				83C654CA260C2C6000E4BE38 /* XCRemoteSwiftPackageReference "KRProgressHUD" */,
 			);
 			productRefGroup = 83058D832609E87C00DEB0EA /* Products */;
 			projectDirPath = "";
@@ -735,14 +731,6 @@
 				kind = branch;
 			};
 		};
-		83C654CA260C2C6000E4BE38 /* XCRemoteSwiftPackageReference "KRProgressHUD" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/krimpedance/KRProgressHUD.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -750,11 +738,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 83058E012609F09B00DEB0EA /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		83C654CB260C2C6000E4BE38 /* KRProgressHUD */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 83C654CA260C2C6000E4BE38 /* XCRemoteSwiftPackageReference "KRProgressHUD" */;
-			productName = KRProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
