@@ -28,6 +28,7 @@
 		8343CD4C260C1ACE0074E53B /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343CD4B260C1ACE0074E53B /* AppError.swift */; };
 		83C654CC260C2C6000E4BE38 /* KRProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 83C654CB260C2C6000E4BE38 /* KRProgressHUD */; };
 		83DDCBA1261AE2D100867A4E /* UIActivityIndicatorView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDCBA0261AE2D100867A4E /* UIActivityIndicatorView+.swift */; };
+		83DDCBA9261AE82C00867A4E /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDCBA8261AE82C00867A4E /* UITableView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		8343CD43260C1A7F0074E53B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		8343CD4B260C1ACE0074E53B /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		83DDCBA0261AE2D100867A4E /* UIActivityIndicatorView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+.swift"; sourceTree = "<group>"; };
+		83DDCBA8261AE82C00867A4E /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				83DDCBA0261AE2D100867A4E /* UIActivityIndicatorView+.swift */,
+				83DDCBA8261AE82C00867A4E /* UITableView+.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				83058DF42609EE3300DEB0EA /* TableViewCell.swift in Sources */,
 				83058DE62609EC6800DEB0EA /* SecondViewController.swift in Sources */,
 				83058D862609E87C00DEB0EA /* AppDelegate.swift in Sources */,
+				83DDCBA9261AE82C00867A4E /* UITableView+.swift in Sources */,
 				8303848D260B1D8400BA3185 /* ToPassDataDelegate.swift in Sources */,
 				8343CD4C260C1ACE0074E53B /* AppError.swift in Sources */,
 				8343CD44260C1A7F0074E53B /* Alert.swift in Sources */,
