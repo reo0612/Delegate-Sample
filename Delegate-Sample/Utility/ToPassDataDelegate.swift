@@ -6,5 +6,5 @@ import Foundation
 // なのでAnyObjectを準拠し、「参照型」に限定する必要がある
 // AnyObjectを準拠しないとエラーになる
 protocol ToPassDataDelegate: AnyObject {
-    func didSelectData(data: String)
+    func didSelectData(model: GithubModel)
 }

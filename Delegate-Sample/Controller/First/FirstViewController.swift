@@ -35,7 +35,7 @@ final class FirstViewController: UIViewController {
 }
 // プロトコルを準拠させて、値を受け取った後の処理をする
 extension FirstViewController: ToPassDataDelegate {
-    func didSelectData(data: String) {
-        label.text = data
+    func didSelectData(model: GithubModel) {
+        label.text = model.fullName
     }
 }

@@ -46,9 +46,9 @@ final class SecondViewController: UIViewController {
 
 extension SecondViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let githubName = githubs[indexPath.row].fullName
+        let github = githubs[indexPath.row]
         // cellをタップした時にデータを渡して、それ以降の処理は任せる
-        delegate?.didSelectData(data: githubName)
+        delegate?.didSelectData(model: github)
         Router.showFirst(from: self)
     }
 }
